@@ -1,0 +1,14 @@
+html{
+    background: #fff;
+}
+.demo{
+    &__container{
+        margin: 40px;
+        h1{
+            font-size: 20px;
+            font-family: 'Segoe UI';
+            color: #6a6a6a;
+        }
+    }
+}
+

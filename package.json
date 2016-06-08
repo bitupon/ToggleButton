@@ -1,0 +1,20 @@
+{
+  "name": "togglebutton",
+  "version": "1.0.0",
+  "description": "CSS3 Toggle Buttons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "toggle",
+    "button",
+    "toggler"
+  ],
+  "author": "bitupon chetia",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.0.4"
+  }
+}

@@ -1,0 +1,70 @@
+.demo__container {
+  margin: 40px; }
+  .demo__container h1 {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    color: #6a6a6a; }
+
+.toggle-button {
+  display: inline-block; }
+  .toggle-button .toggle-button__checkbox {
+    position: absolute;
+    visibility: hidden; }
+    .toggle-button .toggle-button__checkbox + .toggle-button__label {
+      display: inline-block;
+      width: 60px;
+      height: 20px;
+      background-color: #f0f0f0;
+      border: solid 2px #9B9B9B;
+      border-radius: 10px;
+      cursor: pointer; }
+      .toggle-button .toggle-button__checkbox + .toggle-button__label:after {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #9B9B9B;
+        border-radius: 10px;
+        margin: 1px;
+        position: relative;
+        left: 0;
+        transition: all .2s ease-in-out; }
+    .toggle-button .toggle-button__checkbox:checked + .toggle-button__label {
+      border: solid 2px #8FBA4A; }
+      .toggle-button .toggle-button__checkbox:checked + .toggle-button__label:after {
+        background: #8FBA4A;
+        left: 40px; }
+
+.toggle-button.toggle-button--modifier1 .toggle-button__checkbox + .toggle-button__label {
+  width: 60px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 15px; }
+  .toggle-button.toggle-button--modifier1 .toggle-button__checkbox + .toggle-button__label:after {
+    width: 28px;
+    height: 28px;
+    background-color: #9B9B9B;
+    border-radius: 20px; }
+
+.toggle-button.toggle-button--modifier1 .toggle-button__checkbox:checked + .toggle-button__label:after {
+  background: #8FBA4A;
+  left: 30px; }
+
+.toggle-button.toggle-button--modifier2 .toggle-button__checkbox + .toggle-button__label {
+  width: 60px;
+  height: 30px;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px; }
+  .toggle-button.toggle-button--modifier2 .toggle-button__checkbox + .toggle-button__label:after {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 20px; }
+
+.toggle-button.toggle-button--modifier2 .toggle-button__checkbox:checked + .toggle-button__label {
+  background: #8FBA4A; }
+  .toggle-button.toggle-button--modifier2 .toggle-button__checkbox:checked + .toggle-button__label:after {
+    background: #fff;
+    left: 30px; }

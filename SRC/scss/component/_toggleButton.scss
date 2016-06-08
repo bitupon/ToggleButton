@@ -1,0 +1,120 @@
+//CSS for Toggle Button
+
+//Example 1
+.toggle-button{
+	$togBtn:&;
+	display:inline-block;	
+	
+	#{$togBtn}__checkbox{				
+		position: absolute;
+		visibility: hidden;
+
+		+ #{$togBtn}__label{		
+			display: inline-block;
+		    width: 60px;
+		    height: 20px;
+		    background-color: #f0f0f0;
+		    border: solid 2px #9B9B9B;
+		    border-radius: 15px;
+		    cursor: pointer;
+		    box-sizing: content-box;
+
+			&:after{
+				content: "";
+			    display: inline-block;
+			    width: 18px;
+			    height: 18px;
+			    background-color: #9B9B9B;	
+			   
+			    border-radius: 10px;
+			    margin: 1px;
+			    position: relative;
+			    left:0;
+			    transition: all .2s ease-in-out;			    
+			} 
+		}
+
+		&:checked{
+			+ #{$togBtn}__label{						
+			   
+			    border: solid 2px #8FBA4A;	
+				&:after{		
+				 	background: #8FBA4A;		
+				    left:40px;
+				} 
+			}
+		}
+	}
+}
+
+
+//Example 2
+
+.toggle-button{
+	$togBtn:&;
+	&.toggle-button--modifier1{
+
+		#{$togBtn}__checkbox{	
+
+			+ #{$togBtn}__label{		
+				    width: 60px;
+				    height: 30px;
+				    background-color: #f0f0f0;
+				    border: none;
+				    border-radius: 15px;
+
+				&:after{				   
+				    width: 28px;
+				    height: 28px;
+				    background-color: #9B9B9B;					   
+				    border-radius: 20px;
+				} 
+			}
+
+			&:checked{
+				+ #{$togBtn}__label{				    	
+					&:after{		
+					 	background: #8FBA4A;		
+					    left:30px;
+					} 
+				}
+			}
+		}
+	}
+}
+
+//Example 3
+
+.toggle-button{
+	$togBtn:&;
+	&.toggle-button--modifier2{
+
+		#{$togBtn}__checkbox{	
+
+			+ #{$togBtn}__label{		
+				    width: 60px;
+				    height: 30px;
+				    background-color: #e1e1e1;
+				    border: none;
+				    border-radius: 15px;
+
+				&:after{				   
+				    width: 28px;
+				    height: 28px;
+				    background-color: #fff;					   
+				    border-radius: 20px;
+				} 
+			}
+
+			&:checked{
+				+ #{$togBtn}__label{
+					background:#8FBA4A;
+					&:after{		
+					    background: #fff;	
+					    left:30px;
+					} 
+				}
+			}
+		}
+	}
+}
